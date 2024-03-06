@@ -1,0 +1,47 @@
+/* ブロック: レビューインデックス全体を表す */
+.review-index {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* エレメント: タイトル */
+.review-index__title {
+  color: red; /* タイトルの色を赤に設定 */
+  margin-bottom: 16px;
+}
+
+/* エレメント: データ一覧リスト */
+.review-index__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* エレメント: 各データ項目 */
+.review-index__item {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 新たに追加された各エレメントのスタイル */
+.review-index__item-title,
+.review-index__item-url,
+.review-index__item-detail,
+.review-index__item-review,
+.review-index__item-reviewer {
+  margin-bottom: 8px; /* 各項目間のスペース */
+}
+
+.review-index__item-url {
+  color: #e69f1d; /* URLの色 */
+  text-decoration: underline;
+}
+
+.review-index__item-isMine {
+  color: red; /* 'Mine'マークの色 */
+  font-weight: bold;
+}
