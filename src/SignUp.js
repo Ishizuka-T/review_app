@@ -81,27 +81,28 @@ function SignUp() {
     <div>
       <h2>アカウント作成</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
+        <p><strong>名前</strong></p>
         <input
           type="text"
           placeholder="名前"
           {...register('name', { required: true })}
         />
         {errors.name && <p>名前は必須です</p>}
-
+        <p><strong>メールアドレス</strong></p>
         <input
           type="email"
           placeholder="メールアドレス"
           {...register('email', { required: true })}
         />
         {errors.email && <p>Eメールは必須です</p>}
-
+        <p><strong>パスワード</strong></p>
         <input
           type="password"
           placeholder="パスワード"
           {...register('password', { required: true })}
         />
         {errors.password && <p>パスワードは必須です</p>}
-
+        <p><strong>アイコン</strong></p>
         <input
           type="file"
           accept="image/*"

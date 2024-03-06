@@ -36,11 +36,6 @@
   margin-bottom: 8px; /* 各項目間のスペース */
 }
 
-.review-index__item-url {
-  color: #e69f1d; /* URLの色 */
-  text-decoration: underline;
-}
-
 .review-index__item-isMine {
   color: red; /* 'Mine'マークの色 */
   font-weight: bold;

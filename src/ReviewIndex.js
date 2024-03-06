@@ -88,7 +88,7 @@ function ReviewIndex() {
         {data.map(book => (
         <li key={book.id} className="review-index__item">
           <div className="review-index__item-title"><strong>タイトル：</strong>{book.title}</div>
-          <div className="review-index__item-url"><strong>URL：</strong>{book.url}</div>
+          <div className="review-index__item-url"><strong>URL：</strong><a href={book.url} target="_blank" rel="noopener noreferrer">{book.url}</a></div>
           <div className="review-index__item-detail"><strong>詳細：</strong>{book.detail}</div>
           <div className="review-index__item-review"><strong>レビュー：</strong>{book.review}</div>
           <div className="review-index__item-reviewer"><strong>レビュワー：</strong>{book.reviewer}</div>

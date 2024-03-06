@@ -107,6 +107,7 @@ function Profile() {
         
         <h2>アカウント更新</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
+          <p><strong>名前</strong></p>
           <input
             type="text"
             placeholder="名前"
@@ -114,8 +115,8 @@ function Profile() {
           />
           {errors.name && <p>名前は必須です</p>}
   
+          <p><strong>プロフィールアイコン</strong></p>
           {iconUrl && <img src={iconUrl} alt="プロフィールアイコン" />}
-  
           <input
             type="file"
             accept="image/*"
